@@ -1,0 +1,144 @@
+
+
+.grid input {
+  box-sizing: border-box;
+}
+
+.grid .container {
+  margin: 0 auto;
+  max-width: 980px;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.grid .container-fluid {
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+@media only screen and ( max-width: 767px) {
+  .grid .container,
+  .grid .container-fluid {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+}
+
+.grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.grid .col,
+.grid .col-m,
+.grid .col-1,
+.grid .col-2,
+.grid .col-3,
+.grid .col-4,
+.grid .col-5,
+.grid .col-6,
+.grid .col-7,
+.grid .col-8,
+.grid .col-9,
+.grid .col-10,
+.grid .col-11,
+.grid .col-m-1,
+.grid .col-m-2,
+.grid .col-m-3,
+.grid .col-m-4,
+.grid .col-m-5,
+.grid .col-m-6,
+.grid .col-m-7,
+.grid .col-m-8,
+.grid .col-m-9,
+.grid .col-m-10,
+.grid .col-m-11 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+}
+
+.grid .col-1,
+.grid .col-m-1 {
+  max-width: calc(100% / 12);
+}
+
+.grid .col-2,
+.grid .col-m-2 {
+  max-width: calc(100% / 12 * 2);
+}
+
+.grid .col-3,
+.grid .col-m-3 {
+  max-width: calc(100% / 12 * 3);
+}
+
+.grid .col-4,
+.grid .col-m-4 {
+  max-width: calc(100% / 12 * 4);
+}
+
+.grid .col-5,
+.grid .col-m-5 {
+  max-width: calc(100% / 12 * 5);
+}
+
+.grid .col-6,
+.grid .col-m-6 {
+  max-width: calc(100% / 2);
+}
+
+.grid .col-7,
+.grid .col-m-7 {
+  max-width: calc(100% / 12 * 7);
+}
+
+.grid .col-8,
+.grid .col-m-8 {
+  max-width: calc(100% / 12 * 8);
+}
+
+.grid .col-9,
+.grid .col-m-9 {
+  max-width: calc(100% / 12 * 9);
+}
+
+.grid .col-10,
+.grid .col-m-10 {
+  max-width: calc(100% / 12 * 10);
+}
+
+.grid .col-11,
+.grid .col-m-11 {
+  max-width: calc(100% / 12 * 11);
+}
+
+@media screen and (max-width: 991px) {
+  .grid .container {
+    overflow: auto;
+  }
+  .grid .col,
+  .grid .col-1,
+  .grid .col-2,
+  .grid .col-3,
+  .grid .col-4,
+  .grid .col-5,
+  .grid .col-6,
+  .grid .col-7,
+  .grid .col-8,
+  .grid .col-9,
+  .grid .col-10,
+  .grid .col-11 {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
